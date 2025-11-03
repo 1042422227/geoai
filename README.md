@@ -1,3 +1,5 @@
+pip install geoai-py
+
  GeoAI: Artificial Intelligence for Geospatial Data
 
 [![image](https://img.shields.io/pypi/v/geoai-py.svg)](https://pypi.python.org/pypi/geoai-py)
