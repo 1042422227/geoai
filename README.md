@@ -1,4 +1,4 @@
-pip install geoai-py
+
 
  GeoAI: Artificial Intelligence for Geospatial Data
 
