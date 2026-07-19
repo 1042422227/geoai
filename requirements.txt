@@ -1,7 +1,7 @@
 albumentations
 buildingregulariser
 contextily
-datasets>=3.0
+datasets>=5.0.0
 ever-beta
 geopandas
 huggingface_hub
