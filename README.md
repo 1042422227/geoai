@@ -137,3 +137,30 @@ We gratefully acknowledge the support of the following organizations:
 
 -   [NASA](https://www.nasa.gov): This research is partially supported by the National Aeronautics and Space Administration (NASA) through Grant No. 80NSSC22K1742, awarded under the [Open Source Tools, Frameworks, and Libraries Program](https://bit.ly/3RVBRcQ).
 -   [AmericaView](https://americaview.org): This work is also partially supported by the U.S. Geological Survey through Grant/Cooperative Agreement No. G23AP00683 (GY23-GY27) in collaboration with AmericaView.
+Project: GeoAI Enterprise Core
+Tagline: Unifying Geospatial Intelligence with High-Performance Scalable AI Workflows
+
+Stack:
+- Frontend: Next.js 14 with TypeScript and Deck.gl for GPU-accelerated geospatial rendering
+- Backend: FastAPI with Celery and Redis for asynchronous distributed AI task processing
+- Database: PostGIS for spatial data storage and pgvector for AI model embeddings
+- Auth: Keycloak for robust, sovereign Identity and Access Management
+- Deployment: Kubernetes on AWS EKS with GPU node pools and Terraform-based IaC
+
+Features:
+- Privacy-first edge-to-cloud data processing
+- Automated geospatial dataset pipeline with integrated validation
+- Dynamic AI inference engine for semantic segmentation and classification
+- Interactive multi-layer temporal visualization interface
+- Ethical data mirroring for user-controlled information flow
+
+Architecture:
+A microservices-oriented event-driven architecture that separates the Data Ingestion Layer, the Model Execution Engine, and the Visual Analytics Layer. Communication between services occurs via gRPC, ensuring low-latency data transmission. The architecture strictly implements 'Privacidad del Yo', where intermediate analytical state is ephemeral, stored in memory-only buffers during processing, ensuring only user-authorized results persist in long-term storage.
+
+Roadmap:
+1. Containerize existing Python core modules using Docker and optimize for NVIDIA CUDA runtimes
+2. Develop a secure API gateway with token-based access control and rate limiting
+3. Implement the geospatial data abstraction layer using GeoParquet for high-performance retrieval
+4. Configure the distributed GPU training pipeline via Kubeflow
+5. Deploy the interactive frontend with integrated MapLibre visualization components
+6. Establish the 'Mirror' protocol for user-initiated data pruning and audit logs
